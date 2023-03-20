@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section class="section-header">
+            <div class="container container-header">
+                <a href="./index.html">
+                    <svg class="icon-logo-header">
+                        <use href="./images/spyte.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                
+                <div class="box-icon-btn-header">
+                    <a href="./index.html">
+                        <svg class="icon-tell-header">
+                            <use href="./images/spyte.svg#icon-tell"></use>
+                        </svg>
+                    </a>
+
+                    <button class="btn-menu-header js-open-menu" type="button">
+                        <svg class="icon-burger-header">
+                            <use href="./images/spyte.svg#icon-burger"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-menu js-menu-container is-open">
+                <button class="btn-close-mobile-menu js-close-menu " type="button">
+                    <svg class="icon-close-btn">
+                        <use href="./images/spyte.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="list-link-mobile-menu">
+                    <li><a href="" class="link-mobile-menu">Anemone</a></li>
+                    <li><a href="" class="link-mobile-menu">About us</a></li>
+                    <li><a href="" class="link-mobile-menu">Store</a></li>
+                    <li><a href="" class="link-mobile-menu">Delivery</a></li>
+                    <li><a href="" class="link-mobile-menu">Blog</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="section-hero">
+            <div class="container">
+            <h1 class="title-hero">ANEMONE</h1>
+            
+            <picture>
+                
+                <source srcset=" ./images/image-home page-tablet.jpg 1x, ./images/image-home page-tablet@2x.jpg 2x"
+                media="(min-width: 768px)"
+                >
+                <source srcset="./images/image-home page-mobile.jpg 1x, ./images/image-home page-mobile@2x.jpg 2x"
+                media="(max-width: 767px)"
+                >
+                <img src="./images/image-home page-mobile@2x.jpg" alt="flower">
+               
+            </picture>
+            
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+</html>
