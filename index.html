@@ -44,9 +44,9 @@
                     </svg>
                 </button>
                 <ul class="list-link-mobile-menu">
-                    <li><a href="" class="link-mobile-menu">Anemone</a></li>
-                    <li><a href="" class="link-mobile-menu">About us</a></li>
-                    <li><a href="" class="link-mobile-menu">Store</a></li>
+                    <li><a href="#Anemone" class="link-mobile-menu">Anemone</a></li>
+                    <li><a href="#about" class="link-mobile-menu">About us</a></li>
+                    <li><a href="#store" class="link-mobile-menu">Store</a></li>
                     <li><a href="" class="link-mobile-menu">Delivery</a></li>
                     <li><a href="" class="link-mobile-menu">Blog</a></li>
                 </ul>
@@ -54,24 +54,123 @@
         </section>
     </header>
     <main>
-        <section class="section-hero">
+        <section class="section-hero" id="anemone">
             <div class="container">
             <h1 class="title-hero">ANEMONE</h1>
-            
-            <picture>
+            <div class="box-text-photo-icon-hero"> 
                 
-                <source srcset=" ./images/image-home page-tablet.jpg 1x, ./images/image-home page-tablet@2x.jpg 2x"
-                media="(min-width: 768px)"
-                >
-                <source srcset="./images/image-home page-mobile.jpg 1x, ./images/image-home page-mobile@2x.jpg 2x"
-                media="(max-width: 767px)"
-                >
-                <img src="./images/image-home page-mobile@2x.jpg" alt="flower">
-               
-            </picture>
-            
+                <p class="text-hero">flower
+                studio</p>
+                <picture>
+                    
+                    <source srcset=" ./images/image-home-page-tablet.jpg 1x, ./images/image-home-page-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <source srcset="./images/image-home-page-mobile.jpg 1x, ./images/image-home-page-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    >
+                    <img class="photo-hero" src="./images/image-home-page-mobile@2x.jpg" alt="flower">
+                </picture>
+                <svg class="icon-hero">
+                    <use href="./images/spyte.svg#icon-btn-hero"></use>
+                </svg>
+            </div>
             </div>
         </section>
+        <section class="section-about"  id="about">
+            <div class="container">
+                <h2 class="title-abot">ABOUT</h2>
+                <p class="text-about">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy
+                creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
+                <picture>
+                
+                    <source srcset=" ./images/image-about-desktop.jpg 1x, ./images/image-about-desktop@2x.jpg 2x"
+                        media="(min-width: 1280px)"
+                    >
+                    <source srcset=" ./images/image-about-tablet.jpg 1x, ./images/image-about-tablet@2x.jpg.jpg 2x"
+                        media="(min-width: 768px)"
+                    >
+                    <source srcset="./images/image-about-mobile.jpg 1x, ./images/image-about-mobile@2x.jpg 2x"
+                        media="(max-width: 767px)"
+                    >
+                    <img class="photo-about" src="./images/image-about-desktop@2x.jpg" alt="flower">
+                </picture>
+            </div>
+    
+        </section>
+        <section class="section-store" id="store">
+            <div class="container">
+                <h2 class="title-store">STORE</h2>
+                <ul class="list-store">
+                    <li class="item-store">
+                        <picture>
+                            <source srcset=" ./images/compliments-desktop.jpg 1x, ./images/compliments-desktop@2x.jpg 2x"
+                                media="(min-width: 1280px)"
+                            >
+                            <source srcset=" ./images/compliments-tablet.jpg 1x, ./images/compliments-tablet@2x.jpg.jpg 2x"
+                                media="(min-width: 768px)"
+                            >
+                            <source srcset="./images/compliments-mobile.jpg 1x, ./images/compliments-mobile@2x.jpg 2x" 
+                                media="(max-width: 767px)"
+                            >
+                            <img class="photo-store" src="./images/compliments-desktop@2x.jpg" alt="flower">
+                        </picture>
+                        <p class="content-store">compliments</p>
+                        <p class="text-store">from $15</p>
+                    </li>
+                    <li class="item-store">
+                        <picture>
+                            <source srcset=" ./images/bouquets-size-s-desktop.jpg 1x, ./images/bouquets-size-s-desktop@2x.jpg 2x"
+                                media="(min-width: 1280px)"
+                            >
+                            <source srcset=" ./images/bouquets-size-s-tablet.jpg 1x, ./images/bouquets-size-s-tablet@2x.jpg.jpg 2x"
+                                media="(min-width: 768px)"
+                            >
+                            <source srcset="./images/bouquets-size-s-mobile.jpg 1x, ./images/bouquets-size-s-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                            >
+                            <img class="photo-store" src="./images/bouquets-size-s-desktop@2x.jpg" alt="flower">
+                        </picture>
+                        <p class="content-store">bouquets size S</p>
+                        <p class="text-store">from $25</p>
+                    </li>
+                    <li class="item-store">
+                        <picture>
+                            <source srcset=" ./images/bouquets-size-m-desktop.jpg 1x, ./images/bouquets-size-m-desktop@2x.jpg 2x"
+                                media="(min-width: 1280px)"
+                            >
+                            <source srcset=" ./images/bouquets-size-m-tablet.jpg 1x, ./images/bouquets-size-m-tablet@2x.jpg.jpg 2x"
+                                media="(min-width: 768px)"
+                            >
+                            <source srcset="./images/bouquets-size-m-mobile.jpg 1x, ./images/bouquets-size-m-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                            >
+                            <img class="photo-store" src="./images/bouquets-size-m-desktop@2x.jpg" alt="flower">
+                        </picture>
+                        <p class="content-store">bouquets size M</p>
+                        <p class="text-store">from $45</p>
+                    </li>
+                    <li class="item-store">
+                        <picture>
+                            <source srcset=" ./images/bouquets-size-l-desktop.jpg 1x, ./images/bouquets-size-l-desktop@2x.jpg 2x"
+                                media="(min-width: 1280px)"
+                            >
+                            <source srcset=" ./images/bouquets-size-l-tablet.jpg 1x, ./images/bouquets-size-l-tablet@2x.jpg.jpg 2x"
+                                media="(min-width: 768px)"
+                            >
+                            <source srcset="./images/bouquets-size-l-mobile.jpg 1x, ./images/bouquets-size-l-mobile@2x.jpg 2x"
+                                media="(max-width: 767px)"
+                            >
+                            <img class="photo-store" src="./images/bouquets-size-l-desktop@2x.jpg" alt="flower">
+                        </picture>
+                        <p class="content-store">bouquets size L</p>
+                        <p class="text-store">from $60</p>
+                    </li>
+                </ul>
+                <button type="button" class="btn-store">Order flowers</button>
+            </div>
+        </section>
+
     </main>
     <footer>
 

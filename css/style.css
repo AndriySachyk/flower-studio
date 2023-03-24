@@ -7,6 +7,7 @@ body {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
+    color: #000000;
 }
 
 
@@ -47,9 +48,11 @@ a{
 
 
 .container{
-    width: 310px;
+    width: 320px;
     padding-left: 16px;
     padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -79,6 +82,7 @@ a{
 .btn-menu-header{
     background-color: #FFFFFF;
     border: none;
+    padding: 0;
 }
 
 .icon-burger-header{
@@ -150,3 +154,182 @@ a{
 
 
 /* ============/HEADER============ */
+
+/* ============MAiN============ */
+/* ============SECTION-HERO============ */
+.section-hero{
+    position: relative;
+    padding-top: 44px;
+    padding-bottom: 36px;
+}
+
+
+.text-hero{
+    width: 46px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-right: 14px;
+}
+
+
+.photo-hero{
+    display: block;
+    width: 145px;
+    height: 274px;
+    margin-right: 8px;
+}
+
+
+.title-hero{
+    position: absolute;
+    bottom: 0;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 63px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.icon-hero{
+    width: 64px;
+    height: 76px;
+}
+
+
+.box-text-photo-icon-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ============/SECTION-HERO============ */
+/* ============SECTION-ABOUT============ */
+.section-about{
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.title-abot{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+
+.title-abot::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    border: solid 1px #000000 ;
+
+}
+
+
+.text-about{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+}
+
+
+/* ============/SECTION-ABOUT============ */
+
+/* ============SECTION-STORE============ */
+
+
+.section-store{
+    padding-bottom: 70px;
+}
+
+.title-store{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+
+.title-store::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    border: solid 1px #000000;
+
+}
+
+.list-store{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 16px;
+    margin-bottom: 32px;
+}
+
+
+.item-store{
+    width: 136px;
+}
+
+.photo-store{
+    margin-bottom: 12px;
+}
+
+.content-store{
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 6px;
+   
+}
+
+
+.text-store{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    opacity: 0.6;
+}
+
+.btn-store{
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 35px;
+    background: #E86F54;
+    border-radius: 38px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: background-color var(--transition-duration-and-timing-function), box-shadow var(--transition-duration-and-timing-function);
+}
+
+
+.btn-store:hover{
+    background-color: #E25B41;
+}
+
+.btn-store:focus{
+    background-color: #FA6F54;
+    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+}
+
+
+
+
+/* ============/SECTION-STORE============ */
+
+/* ============/MAiN============ */
