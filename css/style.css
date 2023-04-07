@@ -419,6 +419,11 @@ a{
 }
 
 
+.logo-footer{
+    display: none;
+}
+
+
 .title-footer{
     font-family: 'Inter';
     font-weight: 700;

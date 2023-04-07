@@ -5,4 +5,208 @@
         padding-left: 24px;
         padding-right: 24px;
     }
+/* ============HEADER============ */
+
+    .section-header {
+        padding-top: 28px;
+    }
+
+    .list-navigation-header {
+        gap: 48px;
+    }
+/* ============/HEADER============ */
+
+/* ============MAiN============ */
+/* ============SECTION-HERO============ */
+
+
+    .section-hero {
+        padding-top: 64px;
+        padding-bottom: 93px;
+    }
+
+
+    .text-hero {
+        width: 101px;
+        margin-right: 110px;
+    }
+
+    .photo-hero {
+        margin-right: 110px;
+    }
+
+    .icon-hero {
+        width: 166px;
+        height: 166px;
+    }
+
+
+    .title-hero{
+        font-size: 160px;
+        line-height: 1.21;  
+    }
+
+/* ============/SECTION-HERO============ */
+/* ============SECTION-ABOUT============ */
+
+
+
+    .box-abut-text-photo{
+        gap: 90px;
+        margin-top: 26px;
+    }
+
+    .text-about{
+        width: 510px;
+        font-size: 22px;
+        line-height: 1.22;
+    }
+
+
+
+/* ============/SECTION-ABOUT============ */
+
+/* ============SECTION-STORE============ */
+
+
+    .list-store {
+        margin-top: 80px;
+        row-gap: 64px;
+        margin-bottom: 60px;
+    }
+
+    .content-store{
+        font-size: 36px;
+        line-height: 1.22;
+        margin-bottom: 4px;
+    }
+
+
+    .text-store{
+        font-size: 28px;
+        line-height: 1.21;
+
+    }
+
+/* ============/SECTION-STORE============ */
+/* ============SECTION-DELIVERY============ */
+
+    .list-delivery{
+        margin-top: 103px;
+        gap: 57px;
+        margin-bottom: 82px;
+    }
+
+
+    .content-delivery{
+        font-size: 32px;
+        line-height: 1.21;
+    }
+
+/* ============/SECTION-DELIVERY============ */
+/* ============SECTION-BLOG============ */
+
+    .box-slider-photo {
+        margin-top: 122px;
+        column-gap: 32px;
+        margin-bottom: 8px;
+
+    }
+
+    .box-arrow-slider {
+        margin-top: 18px;
+        margin-bottom: 24px;
+    }
+
+/* ============/SECTION-BLOG============ */
+
+/* ============/MAiN============ */
+/* ============FOOTER============ */
+
+
+
+    .footer {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+
+
+    .box-footer{
+        justify-content: flex-start;
+    }
+
+    .list-footer-navigation{
+        gap: 14px;
+    }
+
+    .logo-footer{
+        display: block;
+        width: 73px;
+        height: 57px;
+        margin-right: 210px;
+    }
+
+
+    .icon-logo-footer{
+        width: 73px;
+        height: 57px;
+        fill: #FFFFFF;
+    }
+
+
+    .box-navigation-opening-times{
+        gap: 96px;
+        margin-right: 96px;
+        margin-bottom: 0;
+    }
+
+
+    .box-contacts-icon {
+        width: 100%;
+    }
+
+    .box-contacts{
+        margin-right: auto;
+    }
+
+
+/* ============/FOOTER============ */
+/* ============MODAL-WINDOW============ */
+
+    .modal-subscribe{
+        width: 860px;
+        display: flex;
+        padding: 0;
+        position: fixed;
+        overflow:visible;
+    }
+
+    .modal-photo{
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translateX(0);
+        margin-bottom: 0;
+    }
+
+    .modal-subscribe-desktop{
+        display: flex;
+        flex-direction: column;
+        padding-top: 110px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+/* ============/MODAL-WINDOW============ */
+/* ============MODAL-CONTACT============ */
+
+    .modal-contact {
+        width: 480px;
+        padding: 48px 32px;
+        overflow: visible;
+    }
+
+
+/* ============/MODAL-CONTACT============ */
+
 }
