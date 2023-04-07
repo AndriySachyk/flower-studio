@@ -10,7 +10,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">   
     <title>Document</title>
 </head>
 <body>
@@ -22,13 +25,23 @@
                         <use href="./images/spyte.svg#icon-logo"></use>
                     </svg>
                 </a>
+
+                <nav>
+                    <ul class="list-navigation-header">
+                        <li><a href="#Anemone" class="link-navigation-header">Anemone</a></li>
+                        <li><a href="#About us" class="link-navigation-header">About us</a></li>
+                        <li><a href="#Store" class="link-navigation-header">Store</a></li>
+                        <li><a href="#Delivery" class="link-navigation-header">Delivery</a></li>
+                        <li><a href="#Blog" class="link-navigation-header">Blog</a></li>
+                    </ul>
+                </nav>
                 
                 <div class="box-icon-btn-header">
-                    <a href="./index.html">
+                    <button type="button" class="btn-icon-tell-header" data-modal-open-contact>
                         <svg class="icon-tell-header">
                             <use href="./images/spyte.svg#icon-tell"></use>
                         </svg>
-                    </a>
+                    </button>
 
                     <button class="btn-menu-header js-open-menu" type="button">
                         <svg class="icon-burger-header">
@@ -36,7 +49,8 @@
                         </svg>
                     </button>
                 </div>
-            </div>
+            </div>  
+            
             <div class="mobile-menu js-menu-container is-open">
                 <button class="btn-close-mobile-menu js-close-menu " type="button">
                     <svg class="icon-close-btn">
@@ -44,17 +58,51 @@
                     </svg>
                 </button>
                 <ul class="list-link-mobile-menu">
-                    <li><a href="#Anemone" class="link-mobile-menu">Anemone</a></li>
-                    <li><a href="#about" class="link-mobile-menu">About us</a></li>
-                    <li><a href="#store" class="link-mobile-menu">Store</a></li>
-                    <li><a href="" class="link-mobile-menu">Delivery</a></li>
-                    <li><a href="" class="link-mobile-menu">Blog</a></li>
+                    <li><a href="#" class="link-mobile-menu">Anemone</a></li>
+                    <li><a href="#" class="link-mobile-menu">About us</a></li>
+                    <li><a href="#" class="link-mobile-menu">Store</a></li>
+                    <li><a href="#" class="link-mobile-menu">Delivery</a></li>
+                    <li><a href="#" class="link-mobile-menu">Blog</a></li>
                 </ul>
             </div>
+            <div class="backdrop-contact is-hidden-contact" data-modal-contact >
+                <div class="modal-contact">
+                    <button class=" modal-btn-close" type="button" data-modal-close-contact>
+                        <svg class="modal-icon-close">
+                            <use href="./images/spyte.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <h2 class="modal-contact-title">Contact us</h2>
+                    <p class="modal-contact-content">If you have any additional questions or you want to clarify something before
+                    you make an order please fill in your contact details. We will call you back.</p>     
+                    
+                    <form class="modal-contact-form">
+                        <label class="modal-label-form" for="user_name">Name</label>
+                        <input 
+                            class="modal-input-form"
+                            type="text"
+                            id="user_name"
+                            required
+                            
+                        >
+                        <label for="user_email" class="modal-label-form">Email</label>
+                        <input 
+                            class="modal-input-form modal-input-form-header" 
+                            type="email" 
+                            id="user_email" 
+                            required 
+                        >
+                        <button type="submit" class="modal-btn-subscribe modal-btn-subscribe-header">Send</button>
+                    </form>
+                
+                </div>
+
+            </div>
+          
         </section>
     </header>
     <main>
-        <section class="section-hero" id="anemone">
+        <section class="section-hero" id="Anemone">
             <div class="container">
             <h1 class="title-hero">ANEMONE</h1>
             <div class="box-text-photo-icon-hero"> 
@@ -77,37 +125,40 @@
             </div>
             </div>
         </section>
-        <section class="section-about"  id="about">
+        <section class="section-about"  id="About us">
             <div class="container">
-                <h2 class="title-abot">ABOUT</h2>
-                <p class="text-about">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy
-                creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
-                <picture>
-                
-                    <source srcset=" ./images/image-about-desktop.jpg 1x, ./images/image-about-desktop@2x.jpg 2x"
-                        media="(min-width: 1280px)"
-                    >
-                    <source srcset=" ./images/image-about-tablet.jpg 1x, ./images/image-about-tablet@2x.jpg.jpg 2x"
-                        media="(min-width: 768px)"
-                    >
-                    <source srcset="./images/image-about-mobile.jpg 1x, ./images/image-about-mobile@2x.jpg 2x"
-                        media="(max-width: 767px)"
-                    >
-                    <img class="photo-about" src="./images/image-about-desktop@2x.jpg" alt="flower">
-                </picture>
+                <h2 class="title-main">ABOUT</h2>
+                <div class="box-abut-text-photo">
+                    <p class="text-about">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy
+                    creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
+                    
+                </div>
+                    <picture>
+                    
+                        <source srcset="./images/image-about-desktop.jpg 1x, ./images/image-about-desktop@2x.jpg 2x"
+                            media="(min-width: 1280px)"
+                        >
+                        <source srcset="./images/image-about-tablet.jpg 1x, ./images/image-about-tablet@2x.jpg 2x"
+                            media="(min-width: 768px)"
+                        >
+                        <source srcset="./images/image-about-mobile.jpg 1x, ./images/image-about-mobile@2x.jpg 2x"
+                            media="(max-width: 767px)"
+                        >
+                        <img class="photo-about" src="./images/image-about-desktop@2x.jpg" alt="flower">
+                    </picture>
             </div>
     
         </section>
-        <section class="section-store" id="store">
+        <section class="section-store" id="Store">
             <div class="container">
-                <h2 class="title-store">STORE</h2>
+                <h2 class="title-main">STORE</h2>
                 <ul class="list-store">
                     <li class="item-store">
                         <picture>
                             <source srcset=" ./images/compliments-desktop.jpg 1x, ./images/compliments-desktop@2x.jpg 2x"
                                 media="(min-width: 1280px)"
                             >
-                            <source srcset=" ./images/compliments-tablet.jpg 1x, ./images/compliments-tablet@2x.jpg.jpg 2x"
+                            <source srcset=" ./images/compliments-tablet.jpg 1x, ./images/compliments-tablet@2x.jpg 2x"
                                 media="(min-width: 768px)"
                             >
                             <source srcset="./images/compliments-mobile.jpg 1x, ./images/compliments-mobile@2x.jpg 2x" 
@@ -123,7 +174,7 @@
                             <source srcset=" ./images/bouquets-size-s-desktop.jpg 1x, ./images/bouquets-size-s-desktop@2x.jpg 2x"
                                 media="(min-width: 1280px)"
                             >
-                            <source srcset=" ./images/bouquets-size-s-tablet.jpg 1x, ./images/bouquets-size-s-tablet@2x.jpg.jpg 2x"
+                            <source srcset=" ./images/bouquets-size-s-tablet.jpg 1x, ./images/bouquets-size-s-tablet@2x.jpg 2x"
                                 media="(min-width: 768px)"
                             >
                             <source srcset="./images/bouquets-size-s-mobile.jpg 1x, ./images/bouquets-size-s-mobile@2x.jpg 2x"
@@ -139,7 +190,7 @@
                             <source srcset=" ./images/bouquets-size-m-desktop.jpg 1x, ./images/bouquets-size-m-desktop@2x.jpg 2x"
                                 media="(min-width: 1280px)"
                             >
-                            <source srcset=" ./images/bouquets-size-m-tablet.jpg 1x, ./images/bouquets-size-m-tablet@2x.jpg.jpg 2x"
+                            <source srcset=" ./images/bouquets-size-m-tablet.jpg 1x, ./images/bouquets-size-m-tablet@2x.jpg 2x"
                                 media="(min-width: 768px)"
                             >
                             <source srcset="./images/bouquets-size-m-mobile.jpg 1x, ./images/bouquets-size-m-mobile@2x.jpg 2x"
@@ -155,7 +206,7 @@
                             <source srcset=" ./images/bouquets-size-l-desktop.jpg 1x, ./images/bouquets-size-l-desktop@2x.jpg 2x"
                                 media="(min-width: 1280px)"
                             >
-                            <source srcset=" ./images/bouquets-size-l-tablet.jpg 1x, ./images/bouquets-size-l-tablet@2x.jpg.jpg 2x"
+                            <source srcset=" ./images/bouquets-size-l-tablet.jpg 1x, ./images/bouquets-size-l-tablet@2x.jpg 2x"
                                 media="(min-width: 768px)"
                             >
                             <source srcset="./images/bouquets-size-l-mobile.jpg 1x, ./images/bouquets-size-l-mobile@2x.jpg 2x"
@@ -170,9 +221,9 @@
                 <button type="button" class="btn-store">Order flowers</button>
             </div>
         </section>
-        <section class="section-delivery">
+        <section class="section-delivery" id="Delivery">
             <div class="container">
-                <h2 class="title-delivery">DELIVERY</h2>
+                <h2 class="title-main">DELIVERY</h2>
                 <ol class="list-delivery">
                     <li class="item-delivery">
                         <div class="one">
@@ -195,7 +246,7 @@
                     <source srcset=" ./images/image-delivery-desktop.jpg 1x, ./images/image-delivery-desktop@2x.jpg 2x"
                         media="(min-width: 1280px)"
                     >
-                    <source srcset=" ./images/image-delivery-tablet.jpg 1x, ./images/image-delivery-tablet@2x.jpg.jpg 2x"
+                    <source srcset=" ./images/image-delivery-tablet.jpg 1x, ./images/image-delivery-tablet@2x.jpg 2x"
                         media="(min-width: 768px)"
                     >
                     <source srcset="./images/image-delivery-mobile.jpg 1x, ./images/image-delivery-mobile@2x.jpg 2x"
@@ -204,15 +255,15 @@
                     <img class="photo-delivery" src="./images/image-delivery-desktop@2x.jpg" alt="flower">
                 </picture>
         </section>
-        <section class="section-blog">
+        <section class="section-blog" id="Blog">
             <div class="container">
-                <h2 class="title-blog">BLOG</h2>
+                <h2 class="title-main">BLOG</h2>
                 <div class="box-slider-photo">
                     <picture>
                         <source srcset=" ./images/flowers-image-blog-one-desktop.jpg 1x, ./images/flowers-image-blog-one-desktop@2x.jpg 2x"
                             media="(min-width: 1280px)"
                         >
-                        <source srcset=" ./images/flowers-image-blog-one-tablet.jpg 1x, ./images/flowers-image-blog-one-tablet@2x.jpg.jpg 2x"
+                        <source srcset=" ./images/flowers-image-blog-one-tablet.jpg 1x, ./images/flowers-image-blog-one-tablet@2x.jpg 2x"
                             media="(min-width: 768px)"
                         >
                         <source srcset="./images/flowers-image-blog-one-mobile.jpg 1x, ./images/flowers-image-blog-one-mobile@2x.jpg 2x"
@@ -224,7 +275,7 @@
                         <source srcset=" ./images/flowers-image-blog-two-desktop.jpg 1x, ./images/flowers-image-blog-two-desktop@2x.jpg 2x"
                             media="(min-width: 1280px)"
                         >
-                        <source srcset=" ./images/flowers-image-blog-two-tablet.jpg 1x, ./images/flowers-image-blog-two-tablet@2x.jpg.jpg 2x"
+                        <source srcset=" ./images/flowers-image-blog-two-tablet.jpg 1x, ./images/flowers-image-blog-two-tablet@2x.jpg 2x"
                             media="(min-width: 768px)"
                         >
                         <source srcset="./images/flowers-image-blog-two-mobile.jpg 1x, ./images/flowers-image-blog-two-mobile@2x.jpg 2x"
@@ -236,7 +287,7 @@
                         <source srcset=" ./images/flowers-image-blog-three-desktop.jpg 1x, ./images/flowers-image-blog-three-desktop@2x.jpg 2x"
                             media="(min-width: 1280px)"
                         >
-                        <source srcset=" ./images/flowers-image-blog-three-tablet.jpg 1x, ./images/flowers-image-blog-three-tablet@2x.jpg.jpg 2x"
+                        <source srcset=" ./images/flowers-image-blog-three-tablet.jpg 1x, ./images/flowers-image-blog-three-tablet@2x.jpg 2x"
                             media="(min-width: 768px)"
                         >
                         <source srcset="./images/flowers-image-blog-three-mobile.jpg 1x, ./images/flowers-image-blog-three-mobile@2x.jpg 2x"
@@ -244,29 +295,30 @@
                         >
                         <img class="photo-blog-slider" src="./images/flowers-image-blog-three-desktop@2x.jpg" alt="flower">
                     </picture> -->
-
-                    <div class="box-arrow-slider">
-                        <button class="btn-slider-arrow">
-                            <svg class="icon-arrow-slider">
-                                <use href="./images/spyte.svg#icon-down-arrow-left"></use>
-                            </svg>
-                        </button>
-                        <button class="btn-slider-arrow">
-                            <svg class="icon-arrow-slider">
-                                <use href="./images/spyte.svg#icon-down-arrow-right"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="box-blog-contant-btn">
-                        <p class="content-blog">Follow to our newsletter</p>
-                        <button class="btn-blog-subscribe">Subscribe</button>
+                    <div class="box-arrow-slider-btn-contact">
+                        <div class="box-arrow-slider">
+                            <button class="btn-slider-arrow">
+                                <svg class="icon-arrow-slider">
+                                    <use href="./images/spyte.svg#icon-down-arrow-left"></use>
+                                </svg>
+                            </button>
+                            <button class="btn-slider-arrow">
+                                <svg class="icon-arrow-slider">
+                                    <use href="./images/spyte.svg#icon-down-arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="box-blog-contant-btn">
+                            <p class="content-blog">Follow to our newsletter</p>
+                            <button class="btn-blog-subscribe" type="button" data-modal-open >Subscribe</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container box-footer">
             <div class="box-navigation-opening-times">
                 <div class="box-navigation">
                     <h3 class="title-footer">Navigation</h3>
@@ -322,6 +374,44 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-subscribe">
+            <picture>
+                <source srcset=" ./images/modal-flower-desktop.jpg 1x, ./images/modal-flower-desktop@2x.jpg 2x"
+                    media="(min-width: 1280px)"
+                >
+                <source
+                    srcset=" ./images/modal-flower-tablet.jpg 1x, ./images/modal-flower-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                >
+                <source srcset="./images/modal-flower-mobile.jpg 1x, ./images/modal-flower-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                >
+                <img class="modal-photo" src="./images/modal-flower-desktop@2x.jpg" alt="flower">
+            </picture>
+            <button class="modal-btn-close" type="button" data-modal-close>
+                <svg class="modal-icon-close">
+                    <use href="./images/spyte.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <h2 class="modal-title">Follow to our newsletter</h2>
+            <p class="modal-contant">Be the first to get exclusive offers and the latest news on our product directly in your box.</p>
+            <form class="modal-form">
+                <label for="user_email" class="modal-label-form">Email</label>
+                <input
+                    class="modal-input-form" 
+                    type="email"
+                    id="user_email"
+                    required 
+                    placeholder="Your email"
+                >
+                <button type="submit" class="modal-btn-subscribe">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal-contact.js"></script>
+    <script src="./js/modal-subscribe.js"></script>
 </body>
 </html>
